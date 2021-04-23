@@ -43,6 +43,9 @@ const EditMovieForm = (props) => {
 		.catch(err => {
 		  console.log(err);
 		})
+		.then(()=>{
+			props.getMovies();
+		  });
 
 	}
 	
