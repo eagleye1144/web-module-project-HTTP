@@ -12,7 +12,7 @@ const Movie = (props) => {
     const { push } = useHistory();
 
     const handleDelete = () => {
-        props.deleteMovie(id);
+        deleteMovie(id);
         push('/movies')
     }
 
